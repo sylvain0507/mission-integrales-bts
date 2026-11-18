@@ -8,6 +8,7 @@ Serious game pédagogique en contexte électrique. Deux parcours progressifs de 
 - Site élèves : https://sylvain0507.github.io/mission-integrales-bts/
 - Espace enseignant : https://mission-integrales-bts-volt-261118.sylvainbeq.chatgpt.site/?teacher=1
 - Dans l’espace enseignant, se connecter avec ChatGPT, créer une classe, puis ajouter un identifiant pédagogique par élève.
+- Les clés personnelles comptent 8 caractères lisibles (ex. `K7MP-4R8T`). La saisie accepte les minuscules, avec ou sans tiret et espaces. Pour les élèves existants, le bouton « Simplifier les anciennes clés » conserve leurs parties et notes ; les anciennes clés restent aussi valables.
 - Télécharger les accès et distribuer **individuellement** chaque clé. Ne pas diffuser le fichier complet aux élèves.
 - Publier le lien du jeu dans un devoir Classroom. La note reste dans le tableau de bord du jeu ; aucune synchronisation automatique du carnet de notes Classroom n’est incluse.
 - Le guide complet est intégré au jeu (bouton « Mode d’emploi ») et peut être imprimé.
@@ -30,7 +31,7 @@ Une classe et toutes ses données peuvent être supprimées depuis le tableau de
 
 ## Sources et maintenance
 
-`app.html` : interface et guide ; `engine.js` : missions, calculs et barème ; `server.js` : API et contrôle d’accès ; `build.mjs` : génération du HTML autonome et du Worker ; `test.mjs` : contrôles numériques et isolation des accès.
+`app.html` : interface et guide ; `math.js` : rendu MathML natif des exposants, fractions et intégrales (sans connexion requise) ; `engine.js` : missions, calculs et barème ; `server.js` : API et contrôle d’accès ; `build.mjs` : génération du HTML autonome et du Worker ; `test.mjs` : contrôles numériques et isolation des accès.
 
 Node.js suffit, sans dépendances :
 
